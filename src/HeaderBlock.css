@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "GothamMedium";
+  src: local("Gotham"), url("./fonts/GothamMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamBold";
+  src: local("Gotham"), url("./fonts/GothamBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamLight";
+  src: local("Gotham"), url("./fonts/GothamLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GothamBook";
+  src: local("Gotham"), url("./fonts/GothamBook.ttf") format("truetype");
+}
+
+.headerBlock {
+  background: url("https://tesla.com/ns_videos/model-3-social.jpg") no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+}
+
+.headerBlock__info {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  border: 1px solid red;
+}
+
+.headerBlock__infoText {
+  text-align: center;
+  flex: 1;
+}
+
+.headerBlock__infoText > h1 {
+  color: #393c41;
+  font-weight: 500;
+  font-size: 38px;
+  padding-bottom: 9px;
+}
+
+.headerBlock__infoText > h4 {
+  color: #5c5e62;
+  font-family: "GothamLight";
+  font-size: 15px;
+}
+
+.headerBlock__infoText > h4 > span {
+  padding-bottom: 1px;
+  padding-top: 15px;
+  border-bottom: 1px solid black;
+  color: #393c41;
+  transition: color 0.3s ease-in-out;
+  transition: border padding 0.4s ease-in-out;
+}
+
+.headerBlock__infoText > h4 > span:hover {
+  padding-bottom: 0px;
+  border-bottom-width: 2px;
+  color: black;
+}
+
+.headerBlock__actions {
+  margin-top: 20vh;
+  display: flex;
+  gap: 20px;
+}
+
+.headerBlock__actions > button {
+  cursor: pointer;
+  border: none;
+  width: 260px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: none;
+  letter-spacing: 0.3px;
+}
+
+.headerBlock__buttonPrimary {
+  background-color: #393c41;
+  color: white;
+  opacity: 0.9;
+}
+
+.headerBlock__buttonSecondary {
+  background-color: white;
+  color: black;
+  opacity: 0.8;
+}

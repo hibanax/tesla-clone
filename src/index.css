@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "GothamMedium";
+
+  src: local("Gotham"), url("./fonts/GothamMedium.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "GothamMedium";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
