@@ -37,7 +37,6 @@
   display: flex;
   flex-direction: column;
   height: 60vh;
-  border: 1px solid red;
 }
 
 .headerBlock__infoText {
@@ -49,7 +48,7 @@
   color: #393c41;
   font-weight: 500;
   font-size: 38px;
-  padding-bottom: 9px;
+  padding-bottom: 18px;
 }
 
 .headerBlock__infoText > h4 {
@@ -68,7 +67,6 @@
 }
 
 .headerBlock__infoText > h4 > span:hover {
-  padding-bottom: 0px;
   border-bottom-width: 2px;
   color: black;
 }
@@ -96,10 +94,25 @@
   background-color: #393c41;
   color: white;
   opacity: 0.9;
+  transition: all 0.4s ease-in-out;
+}
+
+.headerBlock__buttonPrimary:hover {
+  background-color: white;
+  color: black;
+  opacity: 0.9;
+  
 }
 
 .headerBlock__buttonSecondary {
   background-color: white;
   color: black;
   opacity: 0.8;
+}
+
+.headerBlock__buttonSecondary:hover {
+  background-color: #393c41;
+  color: white;
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
 }
